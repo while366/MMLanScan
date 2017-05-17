@@ -101,8 +101,7 @@
     
     self.device.ipAddress=self.ipStr;
     self.device.macAddress =[[MacFinder ip2mac:self.device.ipAddress] uppercaseString];
-    self.device.hostname = [LANProperties getHostFromIPAddress:self.ipStr];
-    
+//    self.device.hostname = [LANProperties getHostFromIPAddress:self.ipStr];
     if (!self.device.macAddress) {
  
         errorMessage = [NSError errorWithDomain:@"MAC Address Not Exist" code:10 userInfo:nil];
